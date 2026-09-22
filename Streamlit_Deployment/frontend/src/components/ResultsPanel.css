@@ -1,0 +1,102 @@
+.results-panel {
+  background: #fbfdff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-soft);
+  padding: 20px;
+}
+
+.results-panel__verdict {
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #75dbbf;
+  background: #e9f9f3;
+  border-radius: 9px;
+}
+
+.results-panel__eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.results-panel__verdict h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.results-panel__verdict.is-malignant h3 {
+  color: #168d74;
+}
+
+.results-panel__verdict.is-benign h3 {
+  color: #168d74;
+}
+
+.results-panel__confidence {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.results-panel__confidence .mono {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.results-panel__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.result-bar__label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.result-bar__name {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.result-bar__value {
+  color: var(--text-muted);
+}
+
+.result-bar__track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line-soft);
+  overflow: hidden;
+}
+
+.result-bar__fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.fill-malignant {
+  background: var(--rose);
+}
+
+.fill-benign {
+  background: var(--teal);
+}
+
+.results-panel__description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.results-panel__meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.7;
+}

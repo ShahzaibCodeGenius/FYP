@@ -1,0 +1,74 @@
+.upload-zone {
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, #fbfdff, #f0f6fd);
+  padding: 38px 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #1a65b7;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-zone svg {
+  color: #216bc1;
+  margin-bottom: 4px;
+}
+
+.upload-zone:hover,
+.upload-zone--active {
+  border-color: var(--teal-bright);
+  background: #f0f7f5;
+}
+
+.upload-zone--disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.upload-zone__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.upload-zone__sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.upload-zone__error {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--rose);
+}
+
+.upload-sample {
+  display: grid;
+  grid-template-columns: 1fr 82px auto;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #c9d9ec;
+  border-radius: var(--radius-md);
+  background: #f8fbff;
+}
+
+.upload-sample__copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.upload-sample__copy strong { color: var(--ink); font-size: 12px; }
+.upload-sample__copy span:last-child { color: var(--text-muted); font-size: 10px; }
+.upload-sample__eyebrow { color: #2777c8; font-size: 9px; font-weight: 700; letter-spacing: .1em; }
+.upload-sample__image { width: 82px; height: 58px; object-fit: cover; border-radius: 6px; }
+.upload-sample__button { border: 0; border-radius: 6px; padding: 9px 11px; background: #e3efff; color: #1459a5; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.upload-sample__button:hover { background: #cfe3fb; }
+.upload-sample__button:disabled { cursor: not-allowed; opacity: .55; }
+
+@media (max-width: 560px) {
+  .upload-sample { grid-template-columns: 1fr 70px; }
+  .upload-sample__button { grid-column: 1 / -1; }
+  .upload-sample__image { width: 70px; height: 52px; }
+}

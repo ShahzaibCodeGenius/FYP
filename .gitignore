@@ -1,0 +1,21 @@
+# Python environments and generated files
+**/venv/
+**/__pycache__/
+*.py[cod]
+*.pyo
+
+# JavaScript dependencies and local environment files
+**/node_modules/
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local datasets and temporary Office files
+/dataset_split/
+~$*
+
+# Build and tool caches
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ipynb_checkpoints/
+**/.vite/
